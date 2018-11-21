@@ -1,0 +1,1 @@
+sudo docker kill --signal=SIGTERM $(sudo docker ps -q --filter ancestor=robotarium:robotarium_camera)
