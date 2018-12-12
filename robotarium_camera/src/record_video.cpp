@@ -50,6 +50,7 @@ int main(int argc, char** argv)
     // while (char(waitKey(1000.0/fps)) != 'x')
     while (true)
     {
+	while (!robotariumCamera->isFrameReady()) { }
         robotariumCamera->getFrame(img);
         if (!img.empty())
         {

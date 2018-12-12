@@ -117,6 +117,11 @@ void RobotariumCamera::getFrame(Mat& image)
     }
 }
 
+bool RobotariumCamera::isFrameReady()
+{
+    return obs->isFrameReceived();
+}
+
 void RobotariumCamera::SetIntFeatureValueModulo2(const CameraPtr &pCamera, const char* const& Name)
 {
     FeaturePtr feature;

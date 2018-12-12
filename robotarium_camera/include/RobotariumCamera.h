@@ -18,6 +18,7 @@ public:
     void getFrame(Mat& image);
     void SetIntFeatureValueModulo2(const CameraPtr & Camera, const char* const& Name);
     void PrepareCamera();
+    bool isFrameReady();
 private:
     CameraPtrVector camera;
     FramePtrVector frames;

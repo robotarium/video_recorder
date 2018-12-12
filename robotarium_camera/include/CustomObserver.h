@@ -13,12 +13,14 @@ public:
     CustomObserver( AVT::VmbAPI::CameraPtr camera, AVT::VmbAPI::Examples::FrameInfos eFrameInfos, AVT::VmbAPI::Examples::ColorProcessing eColorProcessing );
     virtual void FrameReceived(const AVT::VmbAPI::FramePtr frames );
     void getFrame(cv::Mat & grabbedFrame);
+    bool isFrameReceived();
 private:
     const AVT::VmbAPI::Examples::FrameInfos m_eFrameInfos;
     const AVT::VmbAPI::Examples::ColorProcessing m_eColorProcessing;
     VmbUchar_t * imgBuffer;
     VmbUint32_t height, width;
     cv::Mat frame;
+    bool frameReceived;
 };
 
 #endif // AVT_VMBAPI_MYFRAMEOBSERVER

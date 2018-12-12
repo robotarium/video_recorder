@@ -1,11 +1,11 @@
 %YAML:1.0
-CameraIp: "169.254.254.241"
+CameraIp: "143.215.159.29" # "169.254.254.241"
 VideoFileName: "/home/video_file/experiment_video.mp4"
 CameraParameters:
   - { name: "AcquisitionMode", type: "string", value: "Continuous" }
   - { name: "ExposureAuto", type: "string", value: "Off" }
   - { name: "ExposureMode", type: "string", value: "Timed" }
-  - { name: "ExposureTimeAbs", type: "float", value: 25000.00 }
+  - { name: "ExposureTimeAbs", type: "float", value: 33333.33 }
   - { name: "GainAuto", type: "string", value: "Continuous" }
   - { name: "Gamma", type: "float", value: 1.00 }
   - { name: "Hue", type: "float", value: 0.00 }
@@ -17,7 +17,7 @@ CameraParameters:
   - { name: "OffsetY", type: "int", value: 0 }
   - { name: "Width", type: "int", value: 1600 }
   - { name: "Height", type: "int", value: 1200 }
-  - { name: "PixelFormat", type: "string", value: "BGR8Packed" }
+  - { name: "PixelFormat", type: "string", value: "BayerBG8" }
   - { name: "SensorReadoutMode", type: "string", value: "Readout12Bits" }
   - { name: "ReverseX", type: "string", value: "false" }
   - { name: "ReverseY", type: "string", value: "false" }
